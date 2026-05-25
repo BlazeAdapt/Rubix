@@ -8,7 +8,7 @@ def home():
 
 @app.route('/solve')
 def solve():
-    scramble=request.data.decode('utf-8')
+    scramble = request.args.get('state')
     return kociemba.solve(scramble)
 
 

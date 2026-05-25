@@ -12,6 +12,5 @@ def solve():
     return kociemba.solve(scramble)
 
 
-state="DUFFUDUDDRRRRRLLLLFFBRFBLLBFFDDDURRUFULDLFBLDUBRBBBBUU"
 if __name__ == "__main__":
     app.run()

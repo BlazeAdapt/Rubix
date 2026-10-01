@@ -18,7 +18,7 @@ The cube can then be solved in two ways:
 
 Once a solution is generated, the ESP32 receives the moves and uses the servos to physically solve the cube.
 
-## 🧠 Two Solvers
+## Two Solvers
 
 The project currently has two different approaches to solving the cube.
 
@@ -51,7 +51,7 @@ The ESP32-CAM captures the cube and uses **HSV-based color detection** to identi
 Image -> Sticker detection -> Color classification -> Cube state -> Solver
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 Rubix/
@@ -63,7 +63,7 @@ Rubix/
 └── README.md
 ```
 
-## 🛠️ Tech
+## $Tech
 
 **ESP32-CAM · C/C++ · Python · OpenCV/Computer Vision · Kociemba · F2L · Servos · Wi-Fi**
 

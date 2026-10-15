@@ -4,6 +4,9 @@ A Rubik's Cube solver built using an **ESP32-CAM, computer vision, servos, and t
 
 The ESP32-CAM scans the cube, converts the detected colors into a cube state, gets a solution, and then physically executes the moves using the servo mechanism.
 
+<b> (Click to watch the video!)</b>
+[![Watch the video](https://img.youtube.com/vi/JRfJsY6AU5g/maxresdefault.jpg)](https://www.youtube.com/watch?v=JRfJsY6AU5g)
+
 ## How it works
 
 The ESP32-CAM scans the cube and uses the camera to figure out the colors of each sticker. From that, it builds the current cube state.
@@ -34,7 +37,7 @@ Instead of searching for a solution using Kociemba, it approaches the cube by so
 
 The F2L solver is kept separate so it can be developed and tested independently, with the eventual possibility of running the solving process locally.
 
-## 🔧 Hardware
+## Hardware
 
 - **ESP32-CAM** — camera, Wi-Fi and main controller
 - **OV2640** — captures the cube
@@ -43,7 +46,7 @@ The F2L solver is kept separate so it can be developed and tested independently,
 
 The ESP32 handles the vision, networking and movement. The current servo setup uses GPIO **13** and **15**.
 
-## 📷 Computer Vision
+## Computer Vision
 
 The ESP32-CAM captures the cube and uses **HSV-based color detection** to identify the stickers.
 
